@@ -1,0 +1,10 @@
+/*body {
+    background-color: #f2f4f7;
+}*/
+
+.footer { 
+    position: fixed;     
+    text-align: center;    
+    bottom: 0px; 
+    width: 100%;
+}
