@@ -46,7 +46,7 @@ $footer = "footer";
             <img class="w-25 mt-2 shadow" src="./img/cantons/<?= $canton ?>.svg" alt="Flag of <?= $result ?>">
         <?php endif; ?>
     </div>
-    <div class="text-center fw-lighter my-3 <?= $footer ?>">Fonta22 &copy; 2024</div>
+    <div class="text-center fw-lighter my-3 <?= $footer ?>"><a href="https://github.com/Fonta22" target="_blank">Fonta22</a> &copy; 2024</div>
     <script src="mobile.js"></script>
 </body>
 </html>
