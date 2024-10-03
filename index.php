@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ERROR | E_PARSE);
 $file = fopen("./data/cantons.csv", "r");
 $data = array();
 while (!feof($file)) {
@@ -27,8 +28,10 @@ $footer = "footer";
             <button class="btn btn-outline-danger" type="submit">Search</button>
         </form>
         <?php
-        $canton = strtoupper(trim($_POST["canton"]));
-        $result = array_search($canton, $data);
+        if ($_POST) {
+            $canton = strtoupper(trim($_POST["canton"]));
+            $result = array_search($canton, $data);
+        }
         ?>
         <?php if ($canton == ""): ?>
             <ul class="fs-5 fw-normal">
